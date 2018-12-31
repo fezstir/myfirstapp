@@ -44,10 +44,25 @@ namespace Lessons
         //range -7.9228E24 to 7.9228E24
         decimal _myDecimalValue = 13.234M;
 
+        // Type Inference; the getType method returns the variable type.
         public void GetSomeType()
         {
+                // double 
                 Console.WriteLine(3.0.GetType());
+                // float
                 Console.WriteLine(_myFloatValue.GetType());
         } 
+// method to demonstrate an explicit cast from float to int
+        public int ConvertFloatToInt(float value) 
+        {
+            int total = (int)value;
+            return total;
+        }
+        // method to demonstrate an implicit cast from int to long
+        public long LongFromInt(int value){
+            long total = value;
+            return total;
+        }
+
     }
 }
