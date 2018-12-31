@@ -52,7 +52,7 @@ namespace Lessons
                 // float
                 Console.WriteLine(_myFloatValue.GetType());
         } 
-// method to demonstrate an explicit cast from float to int
+        // method to demonstrate an explicit cast from float to int
         public int ConvertFloatToInt(float value) 
         {
             int total = (int)value;

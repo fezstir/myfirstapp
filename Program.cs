@@ -1,4 +1,5 @@
 ﻿using System;
+using Lessons;
 
 
 /* This namespace represents the folder that the file is in 
@@ -14,8 +15,26 @@ namespace classwork
         // Main is the method name, string[] is an array with a parameter
         {
 
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
             // Console is a class, Writeline is a method with a parameter
+           
+           //MyHouseResults();
+           MyNumericExamples();
+        }
+        
+        static void MyNumericExamples()
+        {
+        NumericTypes myTypes = new NumericTypes();
+        myTypes.GetSomeType();
+        int something = myTypes.ConvertFloatToInt(35.9F);
+        Console.WriteLine(something);
+
+        Console.WriteLine(myTypes.LongFromInt(5600));
+        }
+        
+        static void MyHouseResults()
+        {  
+         // create and object instance of House called myHouse  
             House myHouse = new House();
             myHouse.PaintDoor = "Red";
             myHouse.CloseDoor();
@@ -34,6 +53,8 @@ namespace classwork
             Computerpc.ProcessorSpeed = "1Ghz";
 
             Console.WriteLine(Computerpc.OperatingSystem);
+
+
 
         }
     }
