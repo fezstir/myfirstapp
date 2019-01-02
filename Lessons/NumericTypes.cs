@@ -70,7 +70,7 @@ namespace Lessons
         {
             int myVal = 5, myOtherVal = 10;
             int addVal = myVal + myOtherVal;
-            int subtractVal = myOtherVal - myVal;
+            int subtractVal = myVal - myOtherVal;
             int multiplyVal = myOtherVal * myVal;
             int divisionVal = myVal / myOtherVal;
             int modulusVal = myVal % myOtherVal;
@@ -81,5 +81,75 @@ namespace Lessons
             Console.WriteLine(divisionVal);
             Console.WriteLine(modulusVal);
         }
+
+        public void CheckOperators()
+        {
+            int test = 100, test2 = 100;
+
+            int testVal = checked(test * test2);
+            checked
+            {
+                // make value 300000000 to fail
+                int testAgain = test * 300;
+                Console.WriteLine(testAgain);
+            }
+            Console.WriteLine(testVal);
+        }
+
+        public void IncrementDecrement()
+        {
+            int myValue = 13, myOther = 10;
+
+            // myValue = myValue + 1
+            myValue++;
+            Console.WriteLine(myValue);
+
+            // myValue = myValue - 1
+            myOther--;
+            Console.WriteLine(myOther);
+
+
+            myValue--;
+            Console.WriteLine(myValue);
+            myOther++;
+            Console.WriteLine(myOther);
+
+        }
+
+        public void SpecialValues()
+        {
+            Console.WriteLine(2.0/0.0);
+            Console.WriteLine(-2.0/0.0);
+            Console.WriteLine(2.0/-0.0);
+            Console.WriteLine(-2.0/-0.0);
+            Console.WriteLine(0.0/0.0);
+            Console.WriteLine((2.0/0.0)-(2.0/0.0));
+            Console.WriteLine(0.0/-0.0 == double.NaN);
+            Console.WriteLine(double.IsNaN(0.0/0.0));
+            Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN));
+        }
+        public void ComparisonOperators()
+        {
+            bool isCool = true;//declaration of bool value
+
+            /**bool vlues cn be true or false.!-- No cast type for bool to numeric types */
+            int x=3, y=5, z=3;
+            Console.WriteLine(x==y);//false
+            Console.WriteLine(x!=y);//true
+            Console.WriteLine(x==z);//true
+        }
+
+        public void OtherOperators()
+        {
+            int val1=5, val2=10;
+            // val1 = val + val2
+            Console.WriteLine(val1 += val2);
+            
+            // val2 = val1 <<
+            Console.WriteLine(val1 <<= val2);
+            Console.WriteLine("fuck this boolshit");
+        }
+
+         
     }
 }

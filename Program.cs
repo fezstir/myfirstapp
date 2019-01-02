@@ -3,12 +3,12 @@ using Lessons;
 
 
 /* This namespace represents the folder that the file is in 
-multiline 
-comment.  */
+  */
 namespace classwork
 {
     // Class is  blueprint of an object.
     class Program
+
     // Static is a single occurrence, void has no data returned (return type).
     {
         static void Main(string[] args)
@@ -19,7 +19,8 @@ namespace classwork
             // Console is a class, Writeline is a method with a parameter
 
             //MyHouseResults();
-            MyNumericExamples();
+           // MyNumericExamples();
+           OtherNumericExample();
         }
 
         static void MyNumericExamples()
@@ -31,10 +32,19 @@ namespace classwork
             Console.WriteLine(myTypes.LongFormInt(5600));
             myTypes.BasicMath();
 
-
+            myTypes.CheckOperators();
+            myTypes.IncrementDecrement();
             Console.WriteLine(myTypes.LongFormInt(5600));
+            myTypes.SpecialValues();
+            myTypes.ComparisonOperators();
+            myTypes.OtherOperators();
         }
-
+        static void OtherNumericExample()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.OtherOperators();
+        }
+        
         static void MyHouseResults()
         {
             // create and object instance of House called myHouse  
