@@ -59,10 +59,27 @@ namespace Lessons
             return total;
         }
         // method to demonstrate an implicit cast from int to long
-        public long LongFromInt(int value){
+        public long LongFromInt(int value)
+        {
             long total = value;
             return total;
         }
 
+
+    public void BasicMath()
+    {
+        int myVal = 5, myOtherVal = 10;
+        int addVal = myVal + myOtherVal;
+        int subtractVal = myOtherVal - myVal;
+        int multiplyVal = myOtherVal * myVal;
+        int divisionVal = myVal / myOtherVal;
+        int modulusVal = myVal % myOtherVal;
+
+        Console.WriteLine(addVal);
+        Console.WriteLine(subtractVal);
+        Console.WriteLine(multiplyVal);
+        Console.WriteLine(divisionVal);
+        Console.WriteLine(modulusVal);
+    }
     }
 }

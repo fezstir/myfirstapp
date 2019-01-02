@@ -28,6 +28,9 @@ namespace classwork
         myTypes.GetSomeType();
         int something = myTypes.ConvertFloatToInt(35.9F);
         Console.WriteLine(something);
+        Console.WriteLine(myTypes.LongFormatInt(5600));
+        myTypes.BasicMath();
+        
 
         Console.WriteLine(myTypes.LongFromInt(5600));
         }
