@@ -3,14 +3,14 @@ namespace Lessons
 {
     public class NumericTypes
     {
-        
+
         /* Integral - Signed */
         // range -128 to 127
         sbyte _mySbyteValue = 2;
 
         // range -32,768 to 32,767
         short _myShortValue = 4;
-        
+
         // range 2,147,483,648 to 2,147,483,647
         int _myIntValue = 25_000;
 
@@ -19,7 +19,7 @@ namespace Lessons
         long _myLongValue2 = 0x5F;
 
         /* Integral - Unsigned */
-    
+
         // range 0 to 255
         byte _myByteValue = 3;
         byte _myByteValue2 = 254;
@@ -47,39 +47,39 @@ namespace Lessons
         // Type Inference; the getType method returns the variable type.
         public void GetSomeType()
         {
-                // double 
-                Console.WriteLine(3.0.GetType());
-                // float
-                Console.WriteLine(_myFloatValue.GetType());
-        } 
+            // double 
+            Console.WriteLine(3.0.GetType());
+            // float
+            Console.WriteLine(_myFloatValue.GetType());
+        }
         // method to demonstrate an explicit cast from float to int
-        public int ConvertFloatToInt(float value) 
+        public int ConvertFloatToInt(float value)
         {
             int total = (int)value;
             return total;
         }
         // method to demonstrate an implicit cast from int to long
-        public long LongFromInt(int value)
+        public long LongFormInt(int value)
         {
             long total = value;
             return total;
         }
 
 
-    public void BasicMath()
-    {
-        int myVal = 5, myOtherVal = 10;
-        int addVal = myVal + myOtherVal;
-        int subtractVal = myOtherVal - myVal;
-        int multiplyVal = myOtherVal * myVal;
-        int divisionVal = myVal / myOtherVal;
-        int modulusVal = myVal % myOtherVal;
+        public void BasicMath()
+        {
+            int myVal = 5, myOtherVal = 10;
+            int addVal = myVal + myOtherVal;
+            int subtractVal = myOtherVal - myVal;
+            int multiplyVal = myOtherVal * myVal;
+            int divisionVal = myVal / myOtherVal;
+            int modulusVal = myVal % myOtherVal;
 
-        Console.WriteLine(addVal);
-        Console.WriteLine(subtractVal);
-        Console.WriteLine(multiplyVal);
-        Console.WriteLine(divisionVal);
-        Console.WriteLine(modulusVal);
-    }
+            Console.WriteLine(addVal);
+            Console.WriteLine(subtractVal);
+            Console.WriteLine(multiplyVal);
+            Console.WriteLine(divisionVal);
+            Console.WriteLine(modulusVal);
+        }
     }
 }

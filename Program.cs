@@ -17,27 +17,27 @@ namespace classwork
 
             //Console.WriteLine("Hello World!");
             // Console is a class, Writeline is a method with a parameter
-           
-           //MyHouseResults();
-           MyNumericExamples();
+
+            //MyHouseResults();
+            MyNumericExamples();
         }
-        
+
         static void MyNumericExamples()
         {
-        NumericTypes myTypes = new NumericTypes();
-        myTypes.GetSomeType();
-        int something = myTypes.ConvertFloatToInt(35.9F);
-        Console.WriteLine(something);
-        Console.WriteLine(myTypes.LongFormatInt(5600));
-        myTypes.BasicMath();
-        
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.GetSomeType();
+            int something = myTypes.ConvertFloatToInt(35.9F);
+            Console.WriteLine(something);
+            Console.WriteLine(myTypes.LongFormInt(5600));
+            myTypes.BasicMath();
 
-        Console.WriteLine(myTypes.LongFromInt(5600));
+
+            Console.WriteLine(myTypes.LongFormInt(5600));
         }
-        
+
         static void MyHouseResults()
-        {  
-         // create and object instance of House called myHouse  
+        {
+            // create and object instance of House called myHouse  
             House myHouse = new House();
             myHouse.PaintDoor = "Red";
             myHouse.CloseDoor();
