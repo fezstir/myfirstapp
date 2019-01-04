@@ -2,8 +2,9 @@
 using Lessons;
 
 
-/* This namespace represents the folder that the file is in 
-  */
+
+// This namespace represents the folder that the file is in 
+  
 namespace classwork
 {
     // Class is  blueprint of an object.
@@ -20,7 +21,25 @@ namespace classwork
 
             //MyHouseResults();
            // MyNumericExamples();
-           OtherNumericExample();
+           //OtherNumericExample();
+           MyStringExamples();
+           
+        }
+
+        static void MyStringExamples()
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+           string words = myTypes.StringBuilderExample("Hello","C#","Class");
+
+           Console.WriteLine(words);
+           myTypes.CharTypeExample();
+           myTypes.EscapeExample();
+           myTypes.PlaceholderExample();
+           myTypes.ArraySample();
+           myTypes.MyHouseArray();
+           myTypes.MultiArraySample();
         }
 
         static void MyNumericExamples()

@@ -1,4 +1,6 @@
 using System;
+
+
 namespace Lessons
 {
     public class NumericTypes
@@ -150,6 +152,7 @@ namespace Lessons
             Console.WriteLine("fuck this boolshit");
         }
 
+        
          
     }
 }
