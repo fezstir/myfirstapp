@@ -3,6 +3,7 @@ using Lessons;
 
 
 
+
 // This namespace represents the folder that the file is in 
   
 namespace classwork
@@ -22,8 +23,26 @@ namespace classwork
             //MyHouseResults();
            // MyNumericExamples();
            //OtherNumericExample();
-           MyStringExamples();
-           
+           //MyStringExamples();
+           StatementSamples();
+        }
+
+        static void StatementSamples()
+        {
+            StatementExamples se = new StatementExamples();
+            //se.SampleIf();
+            //se.SampleElse();
+            //se.SampleIfChain();
+            //se.SampleIfAnd();
+            //se.SampleIfOr();
+            //se.SampleConditional();
+            //se.SampleSwitch(5);
+            //se.SampleWhile();
+            //se.SampleDoWhile();
+            //se.SampleFor();
+            //se.ForEachLoopExample();
+            string myString = se.JumpStatementExample("Sunday");
+            Console.WriteLine(myString);
         }
 
         static void MyStringExamples()
