@@ -24,8 +24,10 @@ namespace classwork
            // MyNumericExamples();
            //OtherNumericExample();
            //MyStringExamples();
-           StatementSamples();
+           //StatementSamples();
+           BottlesSong();
         }
+        
 
         static void StatementSamples()
         {
@@ -41,8 +43,17 @@ namespace classwork
             //se.SampleDoWhile();
             //se.SampleFor();
             //se.ForEachLoopExample();
-            string myString = se.JumpStatementExample("Sunday");
-            Console.WriteLine(myString);
+            //string myString = se.JumpStatementExample("Sunday");
+            //Console.WriteLine(myString);
+            
+        }
+
+        static void BottlesSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesofBeerSong();
+            Console.WriteLine(song);
+
         }
 
         static void MyStringExamples()
