@@ -38,10 +38,38 @@ namespace classwork
         // Autoproperty shorthand property + field
         public string PaintDoor { get; set; }
 
+        public House() { }
+
+        public House(string foundation, string window)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            this.Roof = "shingles";
+            this.PaintDoor = "Green";
+        }
+
+        public House(string foundation, string window, string roof, string door, string doorPaint)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            Roof = roof;
+            PaintDoor = doorPaint;
+        }
         // following are methods:
         public void OpenDoor()
         {
             Console.WriteLine("The Door Opens");
+        }
+        public void OpenDoor(bool isExterior)
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("Open Frontdoor");
+            }
+            else
+            {
+                Console.WriteLine("open Bedroom door");
+            }
         }
 
         public void CloseDoor()

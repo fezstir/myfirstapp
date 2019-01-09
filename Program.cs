@@ -5,7 +5,7 @@ using Lessons;
 
 
 // This namespace represents the folder that the file is in 
-  
+
 namespace classwork
 {
     // Class is  blueprint of an object.
@@ -21,13 +21,34 @@ namespace classwork
             // Console is a class, Writeline is a method with a parameter
 
             //MyHouseResults();
-           // MyNumericExamples();
-           //OtherNumericExample();
-           //MyStringExamples();
-           //StatementSamples();
-           BottlesSong();
+            // MyNumericExamples();
+            //OtherNumericExample();
+            //MyStringExamples();
+            StatementSamples();
+            //BottlesSong();
+            HouseSamples();
+            StructSample();
         }
-        
+        static void StructSample()
+        {
+            BookSample bookSample = new BookSample(4.99m, "zombie fallout", "Mrk Tufo");
+            Console.WriteLine("the book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
+        }
+        static void ComputerSample()
+        {
+            ComputerSample computerSample = new ComputerSample()
+        }
+
+        static void HouseSamples()
+        {
+            House myHouse = new House("concrete", "triple pane");
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation);
+
+            myHouse.OpenDoor(true);
+
+
+        }
 
         static void StatementSamples()
         {
@@ -45,14 +66,15 @@ namespace classwork
             //se.ForEachLoopExample();
             //string myString = se.JumpStatementExample("Sunday");
             //Console.WriteLine(myString);
-            
+
+            se.SampleDays(DaysOfWeek.Sat);
         }
 
         static void BottlesSong()
         {
             BottlesOfBeer beer = new BottlesOfBeer();
             string song = beer.BottlesofBeerSong();
-            Console.WriteLine(song);
+            // Console.WriteLine(song);
 
         }
 
@@ -61,15 +83,15 @@ namespace classwork
             StringTypes myTypes = new StringTypes();
             myTypes.SampleString();
             myTypes.AddString();
-           string words = myTypes.StringBuilderExample("Hello","C#","Class");
+            string words = myTypes.StringBuilderExample("Hello", "C#", "Class");
 
-           Console.WriteLine(words);
-           myTypes.CharTypeExample();
-           myTypes.EscapeExample();
-           myTypes.PlaceholderExample();
-           myTypes.ArraySample();
-           myTypes.MyHouseArray();
-           myTypes.MultiArraySample();
+            Console.WriteLine(words);
+            myTypes.CharTypeExample();
+            myTypes.EscapeExample();
+            myTypes.PlaceholderExample();
+            myTypes.ArraySample();
+            myTypes.MyHouseArray();
+            myTypes.MultiArraySample();
         }
 
         static void MyNumericExamples()
@@ -93,7 +115,7 @@ namespace classwork
             NumericTypes myTypes = new NumericTypes();
             myTypes.OtherOperators();
         }
-        
+
         static void MyHouseResults()
         {
             // create and object instance of House called myHouse  
