@@ -90,16 +90,17 @@ namespace classwork
 
         public struct ComputerSample
         {
-            public decimal price;
-            public string title;
-            public string author;
+            public decimal ram;
+            public string OperatingSystem;
+            public string HDDcapacity;
 
-            public ComputerSample(decimal price, string title, string author)
+            public ComputerSample(decimal ram, string OperatingSystem, string HDDcapacity)
             {
-                this.price = price;
-                this.title = title;
-                this.author = author;
+                this.ram = ram;
+                this.OperatingSystem = OperatingSystem;
+                this.HDDcapacity = HDDcapacity;
             }
         }
 
     }
+}

@@ -1,5 +1,6 @@
 ﻿using System;
 using Lessons;
+using QuizClass;
 
 
 
@@ -24,20 +25,38 @@ namespace classwork
             // MyNumericExamples();
             //OtherNumericExample();
             //MyStringExamples();
-            StatementSamples();
+            //StatementSamples();
             //BottlesSong();
-            HouseSamples();
-            StructSample();
+            //HouseSamples();
+            //StructSample();
+            MathQuiz();
+            GradeQuiz();
         }
+        static void MathQuiz()
+        {
+            MathQuiz mathquiz = new MathQuiz();
+            mathquiz.math50();
+        }
+        static void GradeQuiz()
+        {
+
+            GradeQuiz gradequiz = new GradeQuiz();
+            gradequiz.Grade();
+
+
+
+
+
+        }
+
+
+
         static void StructSample()
         {
             BookSample bookSample = new BookSample(4.99m, "zombie fallout", "Mrk Tufo");
             Console.WriteLine("the book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
         }
-        static void ComputerSample()
-        {
-            ComputerSample computerSample = new ComputerSample()
-        }
+
 
         static void HouseSamples()
         {
