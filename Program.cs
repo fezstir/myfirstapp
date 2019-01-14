@@ -29,26 +29,37 @@ namespace classwork
             //BottlesSong();
             //HouseSamples();
             //StructSample();
-            MathQuiz();
-            GradeQuiz();
+            //MathQuiz();
+            //GradeQuiz();
+            FruitSample();
         }
-        static void MathQuiz()
+
+        static void FruitSample()
         {
+            apple myApple = new apple();
+            myApple.Cobbler();
+            fruit myFruit = new apple();
+            myFruit.EatFruit();
+            Orange myOrange = new Orange();
+            myOrange.EatFruit();
+        }
+        //static void MathQuiz()
+        /*/{
             MathQuiz mathquiz = new MathQuiz();
-            mathquiz.math50();
+        mathquiz.math50();
         }
-        static void GradeQuiz()
-        {
+    /static void GradeQuiz()
+    {
 
-            GradeQuiz gradequiz = new GradeQuiz();
-            gradequiz.Grade();
-
-
+        GradeQuiz gradequiz = new GradeQuiz();
+        gradequiz.Grade();
 
 
 
-        }
 
+
+    }
+*/
 
 
         static void StructSample()
