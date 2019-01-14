@@ -33,15 +33,18 @@ namespace classwork
             //GradeQuiz();
             FruitSample();
         }
-
+        
         static void FruitSample()
         {
             apple myApple = new apple();
-            myApple.Cobbler();
+            myApple.EatFruit();
             fruit myFruit = new apple();
             myFruit.EatFruit();
             Orange myOrange = new Orange();
             myOrange.EatFruit();
+            RanchStyle ranch =  new RanchStyle ("Stone","Triple Pane","Composite","Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
         }
         //static void MathQuiz()
         /*/{
@@ -61,7 +64,7 @@ namespace classwork
     }
 */
 
-
+        
         static void StructSample()
         {
             BookSample bookSample = new BookSample(4.99m, "zombie fallout", "Mrk Tufo");
