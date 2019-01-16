@@ -31,9 +31,62 @@ namespace classwork
             //StructSample();
             //MathQuiz();
             //GradeQuiz();
-            FruitSample();
+            //FruitSample();
+            //Sample11();
+            ModifierExamples();
+
         }
-        
+
+
+
+
+        static void ModifierExamples()
+        {
+            int test = 14;
+            lesson11 myLesson = new lesson11();
+
+            myLesson.RefSample(ref test);
+            Console.WriteLine(test);
+            // Output = 19
+
+            string myTestName, myTestSecondName, myTestLast;
+
+            myLesson.OutSample("Johnathon williams Maniacs", out myTestName, out myTestSecondName, out myTestLast);
+
+            Console.WriteLine(myTestName);
+            Console.WriteLine(myTestSecondName);
+            Console.WriteLine(myTestLast);
+
+            // Output - myTestName = John & mySecondName = Doe
+            decimal dividend = Decimal.One;
+            decimal divisor = 3;
+            Console.WriteLine(dividend / divisor * divisor);
+
+
+
+        }
+
+
+
+        static void Sample11()
+        {
+            lesson11 lesson = new lesson11();
+            lesson.UseParams(10, 3, 24, 36, 45, 120);
+
+            lesson.UseParams();
+
+            int[] intArray = { 2, 3, 4, 5, 6 };
+            lesson.UseParams(intArray);
+
+            lesson.UseParams2(1, "Happy", false, 34.5F);
+
+            lesson.OptionalParmas("Roger");
+            lesson.OptionalParmas("Mathew", 14);
+
+            lesson11 sl = new lesson11();
+            sl.Samplelesson11();
+        }
+
         static void FruitSample()
         {
             apple myApple = new apple();
@@ -42,7 +95,7 @@ namespace classwork
             myFruit.EatFruit();
             Orange myOrange = new Orange();
             myOrange.EatFruit();
-            RanchStyle ranch =  new RanchStyle ("Stone","Triple Pane","Composite","Blue");
+            RanchStyle ranch = new RanchStyle("Stone", "Triple Pane", "Composite", "Blue");
             ranch.OpenDoor();
             Console.WriteLine(ranch.Roof);
         }
@@ -62,9 +115,9 @@ namespace classwork
 
 
     }
-*/
+    */
 
-        
+
         static void StructSample()
         {
             BookSample bookSample = new BookSample(4.99m, "zombie fallout", "Mrk Tufo");
