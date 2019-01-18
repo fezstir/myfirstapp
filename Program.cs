@@ -33,10 +33,33 @@ namespace classwork
             //GradeQuiz();
             //FruitSample();
             //Sample11();
-            ModifierExamples();
-
+            //ModifierExamples();
+            //Lesson12();
+            AbstractDemo();
         }
 
+        static void AbstractDemo()
+        {
+            Trex trex = new Trex();
+            Triceratops triceratops = new Triceratops();
+            trex.EatFood();
+            trex.Move();
+            trex.Speed();
+            trex.Habitat();
+
+            triceratops.EatFood();
+            triceratops.Move();
+            triceratops.Speed();
+            triceratops.Habitat();
+        }
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("44");
+            double temp2 =
+            Utilities.FahrenheitToCelsius("98.6");
+            Console.WriteLine(temp2);
+            Console.WriteLine(temp);
+        }
 
 
 
