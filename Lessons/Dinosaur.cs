@@ -3,6 +3,7 @@ namespace Lessons
 {
     public abstract class Dinosaur
     {
+        public string Travel { get; set; } = "Walk";
         public abstract void EatFood();
         public abstract void Habitat();
         public virtual void Move()
