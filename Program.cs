@@ -42,9 +42,16 @@ namespace classwork
             //PartialSample();
             //AnotherHouseExample();
             //GenericSample();
-            CollectionSample();
+            //CollectionSample();
+            LabSample();
+
         }
 
+        static void LabSample()
+        {
+            LabReults lr = new LabReults();
+            lr.Electric();
+        }
 
 
         static void CollectionSample()
