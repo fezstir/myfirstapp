@@ -3,16 +3,59 @@ using System.Globalization;
 
 namespace Lessons
 {
-
-    enum meas : int
+    class Program
     {
-        millimeter,
-        centimenter,
-        inches,
-        meter,
-        yard
+
+        public enum FeetConvert
+        {
+            mm,
+            cm,
+            inch,
+            m,
+            yard,
+
+
+        };
+
+        public void ConversionToFeet(double value, FeetConvert feetConvert)
+        {
+            switch (feetConvert)
+            {
+                case FeetConvert.mm:
+                    double total = value * 304.8;
+                    Console.WriteLine(total + "millimeters");
+                    break;
+                case FeetConvert.cm:
+                    total = value * 30.48;
+                    Console.WriteLine(total + "centimeters");
+                    break;
+                case FeetConvert.inch:
+                     total = value *6.75;
+                    Console.WriteLine(total + "inches");
+                    break;
+                case FeetConvert.m:
+                    total = value * 3.048;
+                    Console.WriteLine(total + "meters");
+                    break;
+                case FeetConvert.yard:
+                    total = value * 0.3333333;
+                    Console.WriteLine(total + "yards");
+                    break;
+            }
+
+        }
+
+        public void Main()
+
+        {
+            
+            
+            GetItemMeas;
+
+        }
     }
 }
+
 /* 
 constant double mm;
 
