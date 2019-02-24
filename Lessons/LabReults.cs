@@ -3,10 +3,10 @@ namespace Lessons
 {
     public class LabReults
     {
-
+        
         public void Electric()
-        {
-            Console.WriteLine("Ohm's law - do you want to solve for I(cureent/amps),V(volt), or R(ohm)?");
+        {   
+            Console.WriteLine("Ohm's law - do you want to solve for I(cureent/amps),V(volt), or R-esistance(ohm)?");
             string value = Console.ReadLine();
 
             switch (value)
@@ -22,7 +22,7 @@ namespace Lessons
                     int r = Convert.ToInt32(ohm);
                     int i = v / r;
                     Console.WriteLine(i + "= I current amps");
-                    break;
+                    Electric();
 
                 case "V":
                     Console.WriteLine("Enter Amps");
@@ -33,7 +33,7 @@ namespace Lessons
                     r = Convert.ToInt32(ohm);
                     v = i * r;
                     Console.WriteLine(v + "= V volts");
-                    break;
+                    Electric();
 
                 case "R":
                     Console.WriteLine("Enter value for Volt");
@@ -44,12 +44,12 @@ namespace Lessons
                     i = Convert.ToInt32(cur);
                     r = v * i;
                     Console.WriteLine(r + "Resistance - Ohm");
-                    break;
+                    Electric();
 
                 default:
                     Console.WriteLine("You must enter I, V, or R");
                     Console.ReadLine();
-                    return;
+                    Electric();
 
 
 
