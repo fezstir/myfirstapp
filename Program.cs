@@ -1,7 +1,7 @@
 ﻿using System;
 using Lessons;
 using QuizClass;
-
+using Advanced;
 
 
 
@@ -14,6 +14,8 @@ namespace classwork
 
     // Static is a single occurrence, void has no data returned (return type).
     {
+        public delegate void TryOn(string type);
+
         static void Main(string[] args)
         // Main is the method name, string[] is an array with a parameter
         {
@@ -43,7 +45,47 @@ namespace classwork
             //AnotherHouseExample();
             //GenericSample();
             //CollectionSample();
-            LabSample();
+            //LabSample();
+            //DelegateSample();
+            //MultiDelegateSample();
+            //EventSample();
+            LambdaSample();
+        }
+
+        private static void LambdaSample()
+        {
+            LambdaExample myLambda = new LambdaExample();
+            Console.WriteLine(myLambda.MyLambdaOne(5));
+        }
+
+        private static void EventSample()
+        {
+            Coats myCoats = new Coats();
+            string result = myCoats.MyResult;
+            Console.WriteLine("My FavoriteCoats is ");
+
+        }
+        private static void MultiDelegateSample()
+        {
+            Hats moreHats = new Hats(7);
+            TryOn someHats, niceHat, sadHat;
+
+            niceHat = moreHats.FindLuckyHat;
+            niceHat("Top");
+
+            sadHat = moreHats.FindUglyHat;
+            sadHat("Dunce");
+
+            someHats = niceHat + sadHat;
+            someHats("Cowboy");
+        }
+        private static void DelegateSample()
+        {
+            Hats myHat = new Hats("Cowboy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I triedon a  " + myHat.HatType + " hat of size " + myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
 
         }
 

@@ -1,4 +1,4 @@
-namespace myfirstapp.Lessons.Television
+/*namespace myfirstapp.Lessons.Television
 {
     public class TVbase
     {
@@ -105,4 +105,4 @@ namespace myfirstapp.Lessons.Television
             }
         }
     }
-}
+}*/
